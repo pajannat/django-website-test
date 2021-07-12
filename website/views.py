@@ -19,4 +19,9 @@ class AboutView(TemplateView):
             "Django",
             "C",
         ]
+        ctxt["licenses"] = [
+            "基本情報技術者試験",
+            "応用情報技術者試験",
+            "JDLA Deep Learning for ENGINEER 2021#1",
+        ]
         return ctxt

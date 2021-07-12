@@ -14,4 +14,12 @@
     <li>スキルがありません。</li>
     {% endfor %}
 </ul>
+<h2>資格</h2>
+<ul>
+    {% for license in licenses %}
+    <li>{{ license }}</li>
+    {% empty %}
+    <li>取得資格がありません。</li>
+    {% endfor %}
+</ul>
 {% endblock %}
